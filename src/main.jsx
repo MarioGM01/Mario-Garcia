@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import FallingStars from './components/FallingStars';
 import './index.css';
-import FallingStars from './FallingStars'; // Importa el componente FallingStars
+import { Inicio } from './components/inicio';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <>
-      <FallingStars /> {/* Añade el componente aquí */}
+    <div className="background-container">
+      <FallingStars />
+    </div>
+      <Inicio></Inicio>
     </>
-  </React.StrictMode>,
+  </StrictMode>,
 );

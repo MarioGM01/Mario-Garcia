@@ -1,0 +1,45 @@
+#case-info {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: center; /* Centra el contenido en el eje horizontal */
+    align-items: center; /* Centra el contenido en el eje vertical */
+    height: 50vh; /* Ocupa la mitad de la altura de la ventana */
+}
+
+.box-content {
+    display: flex; /* Utiliza flexbox para los elementos dentro de box-content */
+    align-items: center; /* Alinea verticalmente los elementos */
+    background-color: #00000073; /* Fondo semitransparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 40%; /* Ajusta el ancho según sea necesario */
+}
+
+.box-inf {
+    margin-right: auto; /* Permite que el espacio se ocupe por el margen izquierdo */
+    color: white; /* Color del texto */
+}
+
+.box-img {
+    display: flex; /* Flexbox para la imagen */
+    justify-content: flex-end; /* Alinea la imagen al borde derecho */
+}
+
+#img-perfil {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+#h1-name-inicio {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    color: white; /* Color del texto */
+    font-size: 3em; /* Ajusta el tamaño de la fuente según sea necesario */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado alrededor del texto */
+    background: linear-gradient(180deg, #000000, #003366, #000000); /* Degradado de negro a azul oscuro y de vuelta a negro */
+    -webkit-background-clip: text; /* Hace que el fondo solo se aplique al texto */
+    background-clip: text; /* Para que el texto tenga el fondo degradado */
+    opacity: 0.8; /* Opacidad del texto */
+}
+
