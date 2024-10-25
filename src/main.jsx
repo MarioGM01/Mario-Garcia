@@ -8,9 +8,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <>
     <div className="background-container">
-      <FallingStars />
+      <FallingStars/>
     </div>
-      <Inicio></Inicio>
+      <Inicio/>
     </>
   </StrictMode>,
 );
