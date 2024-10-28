@@ -5,7 +5,7 @@
     /* Centra el contenido en el eje horizontal */
     align-items: center;
     /* Centra el contenido en el eje vertical */
-    height: 50vh;
+    height: 60vh;
     /* Ocupa la mitad de la altura de la ventana */
 }
 
@@ -18,11 +18,11 @@
     /* Fondo semitransparente */
     padding: 20px;
     /* Espaciado interno */
-    border-radius: 15px;
+    border-radius: 30px;
     /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* Sombra para dar profundidad */
-    width: 40%;
+    width: 48%;
     /* Ajusta el ancho según sea necesario */
 }
 
@@ -34,6 +34,7 @@
 }
 
 .box-img {
+    margin-right: 5%;
     display: flex;
     /* Flexbox para la imagen */
     justify-content: flex-end;
@@ -41,11 +42,11 @@
 }
 
 #img-perfil {
-    width: 200px;
+    width: 300px;
     /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto;
     /* Mantiene la relación de aspecto de la imagen */
-    border-radius: 50%;
+    border-radius: 10%;
     /* Hace que la imagen sea circular */
 }
 
@@ -56,9 +57,9 @@
     /* Color del texto */
     font-size: 3em;
     /* Ajusta el tamaño de la fuente según sea necesario */
-    text-align: center;
+    text-align: left;
     /* Centra el texto */
-    padding: 20px;
+    padding: 10px;
     /* Espaciado alrededor del texto */
     background: linear-gradient(180deg, #000000, #003366, #000000);
     /* Degradado de negro a azul oscuro y de vuelta a negro */
@@ -73,14 +74,14 @@
 #h3-web {
     position: relative;
     /* Necesario para posicionar el pseudo-elemento */
-    color: white;
+    color: rgb(187, 187, 187);
     /* Color del texto */
-    font-size: 3em;
-    /* Ajusta el tamaño de la fuente según sea necesario */
-    text-align: center;
-    /* Centra el texto */
-    padding: 20px;
-    /* Espaciado alrededor del texto */
+    font-size: 1.5em;
+    /* Tamaño de la fuente ligeramente más pequeño */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    padding: 10px 15px;
+    /* Espaciado interno alrededor del texto */
     background: linear-gradient(180deg, #000000, #003366, #000000);
     /* Degradado de negro a azul oscuro y de vuelta a negro */
     -webkit-background-clip: text;
@@ -90,3 +91,92 @@
     opacity: 0.8;
     /* Opacidad del texto */
 }
+
+#cv-button {
+    height: 25px;
+    width: 150px;
+    display: flex;
+    /* Para alinear la imagen y el texto en una línea */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    padding: 10px 20px;
+    margin-left: 10px;
+    /* Espaciado interno */
+    font-size: 1em;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    /* Color del texto */
+    background: #1f2a38;
+    /* Degradado de negro a azul oscuro */
+    border: none;
+    /* Quita el borde por defecto del botón */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor a pointer */
+    transition: transform 0.3s, background 0.3s;
+    /* Transiciones suaves */
+    text-decoration: none;
+    /* Quita la línea del enlace */
+}
+
+#cv-button:hover {
+    background: linear-gradient(35deg, #1f2a38, #7194b8);
+    transform: scale(1.05);
+    /* Aumenta el tamaño en hover */
+    background: -moz-element(#2c2a2a, #003366)
+        /* Invierte el degradado en hover */
+}
+
+.icono-boton {
+    width: 24px;
+    /* Tamaño de la imagen */
+    height: 24px;
+    /* Tamaño de la imagen */
+    margin-right: 20px;
+    /* Espacio entre la imagen y el texto */
+}
+
+
+.linkedIn-icons {
+    display: flex;
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
+    margin-top: 5px;
+    /* Espacio entre el botón de descarga y las imágenes */
+}
+
+.linkedIn-icons .icon {
+    width: 100px;
+    /* Tamaño de las imágenes */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    margin: 0 5em;
+    /* Espacio entre las imágenes */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.2s;
+    /* Transición para el efecto hover */
+}
+
+.linkedIn-icons .icon:hover {
+    transform: scale(1.2);
+    /* Aumenta el tamaño al pasar el mouse */
+}
+
+.imgsIcons {
+    background-color: #a2bbd4a4;
+    border-radius: 5%;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.imgsIcons:hover {
+    transition: opacity 0.3s ease;
+    /* Suave transición de opacidad */
+    border-radius: 5%;
+    /* Bordes redondeados opcional */
+    background-color: #0a66c2;
+    transition: transform 1s ease, opacity 1s ease;
+}
+

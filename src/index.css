@@ -6,12 +6,14 @@ body {
     /* Elimina el margen por defecto */
     height: 200vh;
     /* Asegura que el body ocupe toda la altura de la ventana */
-    background: linear-gradient(to bottom, #031441, #010b25 ,#000000, #000000);
+    background: linear-gradient(to bottom, #031441, #010b25, #000000, #000000);
     /* Degradado de morado a negro */
     color: rgb(255, 253, 253);
     /* Cambia el color del texto para que sea visible sobre el fondo */
     font-family: Arial, sans-serif;
     /* Establece una fuente básica */
+    overflow: hidden;
+    /* Oculta el desplazamiento en ambos ejes */
 }
 
 .background-container {
