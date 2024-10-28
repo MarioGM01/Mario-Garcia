@@ -167,7 +167,7 @@
 
 .imgsIcons {
     background-color: #a2bbd4a4;
-    border-radius: 5%;
+    border-radius: 10px;
     transition: transform 1s ease, opacity 1s ease;
 }
 

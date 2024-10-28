@@ -1,0 +1,59 @@
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin-top: 14em;
+  background-color: #00000073;
+  /* Fondo semitransparente */
+  padding: 20px;
+  /* Espaciado interno */
+  border-radius: 30px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 10px 0;
+  padding-left: 30px;
+  width: 54em;
+  /* Espacio para el punto */
+}
+
+.timeline-point {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color:#3250d69d;
+  /* Color del punto */
+}
+
+.timeline-content {
+  border-left: 2px solid #3250d69d;
+  /* Línea a la derecha */
+  padding-left: 15px;
+  /* Espacio para el texto */
+  margin-left: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#titleExperience {
+  font-size: 2.5rem; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold; /* O usa un número como 700 para más grosor */
+  margin-bottom: 20px; /* Espaciado inferior opcional */
+  color: #ffffffd0; /* Color del texto, opcional */
+  margin-left: 1em;
+}
