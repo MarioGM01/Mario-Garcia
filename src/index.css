@@ -12,7 +12,6 @@ body {
     /* Cambia el color del texto para que sea visible sobre el fondo */
     font-family: Arial, sans-serif;
     /* Establece una fuente básica */
-    
 }
 
 .background-container {
@@ -22,4 +21,8 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }

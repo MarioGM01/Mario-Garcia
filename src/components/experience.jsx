@@ -14,12 +14,11 @@ export function Experience() {
                     </div>
                     {experiences.map((exp, index) => (
                         <div className="timeline-item" key={index}>
-                            <div className="timeline-point"></div>
                             <div className="timeline-content">
+                                <h2>{exp.location}</h2>
                                 <h4>{exp.year}</h4>
                                 <h3>{exp.title}</h3>
-                                <h4>{exp.title}</h4>
-                                <h5>{exp.description}</h5>
+                                <p>{exp.description}</p>
                             </div>
                         </div>
                     ))}

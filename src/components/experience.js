@@ -18,5 +18,11 @@ export const experiences = [
         location: 'Solvam',
         description: 'Especializado en el diseño y desarrollo de aplicaciones web interactivas y funcionales. Experiencia en el uso de tecnologías como HTML, CSS y JavaScript, así como en la integración de bases de datos y servicios backend para ofrecer soluciones efectivas a usuarios y empresas.',
     },
+    { 
+        year: '2021 - 2023', 
+        title: 'Programador Web.', 
+        location: 'Movus',
+        description: 'En mi tiempo en Movus modernicé sitios web usando arquitectura MVC, trabajando con tecnologías como JavaScript, Angular, Ionic, PHP y APIs. Esta experiencia me permitió optimizar plataformas y mejorar la interacción del usuario en soluciones de movilidad urbana.',
+    },
     // Agrega más experiencias según sea necesario
 ];

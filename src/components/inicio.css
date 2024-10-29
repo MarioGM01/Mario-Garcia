@@ -174,7 +174,7 @@
 .imgsIcons:hover {
     transition: opacity 0.3s ease;
     /* Suave transición de opacidad */
-    border-radius: 5%;
+    border-radius: 10px;
     /* Bordes redondeados opcional */
     background-color: #0a66c2;
     transition: transform 1s ease, opacity 1s ease;
