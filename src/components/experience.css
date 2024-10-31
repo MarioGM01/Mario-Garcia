@@ -1,8 +1,7 @@
 .timeline {
   position: relative;
-  padding: 20px 0;
-  margin-top: 25em;
-  background-color: #00000073;
+  padding: 20px 0; 
+  background-color: #07060644;
   /* Fondo semitransparente */
   padding: 20px;
   /* Espaciado interno */
@@ -11,7 +10,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+#caseExperience{
+  display: flex;
+  /* Utiliza flexbox para el diseño */
+  justify-content: center;
+  /* Centra el contenido en el eje horizontal */
+  margin-top: 5em;
+}
+
 .timeline-item {
+  align-items: center;
   position: relative;
   margin: 10px 0;
   padding-left: 30px;
@@ -67,13 +75,13 @@ p {
 }
 
 #titleExperience {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   /* Ajusta el tamaño según sea necesario */
   font-weight: bold;
   /* O usa un número como 700 para más grosor */
   margin-bottom: 20px;
   /* Espaciado inferior opcional */
-  color: #ffffffd0;
+  color: #ffffff;
   /* Color del texto, opcional */
   margin-left: 1em;
 }

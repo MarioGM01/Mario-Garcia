@@ -3,10 +3,7 @@
     /* Utiliza flexbox para el diseño */
     justify-content: center;
     /* Centra el contenido en el eje horizontal */
-    align-items: center;
-    /* Centra el contenido en el eje vertical */
-    height: 60vh;
-    /* Ocupa la mitad de la altura de la ventana */
+    margin-top: 10em;
 }
 
 .box-content {
@@ -143,7 +140,7 @@
     display: flex;
     justify-content: center;
     /* Centra las imágenes horizontalmente */
-    margin-top: 5px;
+    margin-top: 5em;
     /* Espacio entre el botón de descarga y las imágenes */
 }
 

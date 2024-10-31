@@ -1,4 +1,3 @@
-// inicio.jsx
 import React from 'react';
 import './experience.css'
 import { experiences } from './experience';
@@ -7,7 +6,7 @@ import { experiences } from './experience';
 export function Experience() {
     return (
         <>
-            <div id='case-info'>
+            <div id='caseExperience'>
                 <div className="timeline">
                     <div>
                         <h1 id='titleExperience'>Experiencia</h1>

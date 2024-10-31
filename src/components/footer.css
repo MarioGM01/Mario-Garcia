@@ -1,0 +1,40 @@
+.lineFooter {
+    border: 0.01em solid rgba(66, 65, 65, 0.651);
+    width: 50em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+#blockCase {
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos en el eje horizontal */
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.footerText {
+    margin-top: 2em;
+    margin-bottom: 200em;
+    margin-left: -25em;
+    margin: 0;
+    /* Quita el margen para mejor alineación */
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;    /* Centra el texto y los iconos verticalmente */
+    gap: 1em;               /* Espacio entre el texto y los iconos */
+    justify-content: center; /* Centra todo el contenido horizontalmente */
+}
+
+
+.footerIcon {
+    width: 24px;      /* Ajusta el tamaño del icono según prefieras */
+    height: 24px;
+    background-color: rgb(94, 92, 92);
+    border-radius: 20px;
+}

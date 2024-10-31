@@ -43,7 +43,13 @@ const FallingStars = () => {
         return () => clearInterval(intervalId);
     }, []);
 
-    return <div className="star-container"></div>;
+    return (
+        <>
+            <div className="star-container">
+                
+            </div>
+        </>
+    )
 };
 
 export default FallingStars;
