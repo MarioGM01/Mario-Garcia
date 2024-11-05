@@ -13,7 +13,7 @@
     /* Centra los elementos en el eje horizontal */
     justify-content: center;
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 
 .footerText {
@@ -26,15 +26,42 @@
 
 .footerContent {
     display: flex;
-    align-items: center;    /* Centra el texto y los iconos verticalmente */
-    gap: 1em;               /* Espacio entre el texto y los iconos */
-    justify-content: center; /* Centra todo el contenido horizontalmente */
+    align-items: center;
+    /* Centra el texto y los iconos verticalmente */
+    gap: 1em;
+    /* Espacio entre el texto y los iconos */
+    justify-content: center;
+    /* Centra todo el contenido horizontalmente */
 }
 
 
 .footerIcon {
-    width: 24px;      /* Ajusta el tamaño del icono según prefieras */
+    width: 24px;
+    /* Ajusta el tamaño del icono según prefieras */
     height: 24px;
     background-color: rgb(94, 92, 92);
     border-radius: 20px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+        /* Apila los iconos debajo del texto en móviles */
+    }
+
+    .footerText {
+        margin-bottom: 1em;
+        /* Añadir un margen inferior para espaciar del siguiente elemento */
+    }
+
+    .footerIcon {
+        width: 0px;
+        /* Ajustar el tamaño de los iconos en móviles */
+        height: 0px;
+    }
+
+    #blockCase {
+        margin-bottom: 3em;
+    }
 }

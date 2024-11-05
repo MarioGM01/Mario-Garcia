@@ -5,7 +5,7 @@ body {
     margin: 0;
     /* Elimina el margen por defecto */
     /* Asegura que el body ocupe toda la altura de la ventana */
-    background: linear-gradient(to bottom, #031441, #010b25 ,#000000, #000000, #000000, #000000);
+    background: linear-gradient(to bottom, #031441, #010b25, #000000, #000000, #000000, #000000);
     /* Degradado de morado a negro */
     color: rgb(255, 253, 253);
     /* Cambia el color del texto para que sea visible sobre el fondo */
@@ -22,5 +22,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        /* Evitar el desbordamiento horizontal */
+    }
 }

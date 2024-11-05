@@ -1,50 +1,26 @@
 .blockIconsStack {
     position: relative;
-    width: 50em;
+    width: 90%; /* Cambiado a un ancho relativo para adaptarse mejor en móviles */
+    max-width: 50em; /* Máximo ancho para pantallas grandes */
     padding: 20px 0;
     border-radius: 2em;
+    margin: auto; /* Centra el bloque en la pantalla */
 }
 
 #case-info-stack {
     display: flex;
-    /* Utiliza flexbox para el diseño */
     justify-content: center;
-    /* Centra el contenido en el eje horizontal */
+    margin-top: 5em; /* Espacio superior ajustado */
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
 }
 
 #titleStack {
     text-align: center;
-    font-size: 80px;
-    background-image: linear-gradient(to right, #1214aade, #1214aade, #1214aade, #7e0dc0, #7e0dc0, #7e0dc0); /* Cambia los colores según tus preferencias */
-    -webkit-background-clip: text; /* Recorta el fondo al texto */
-    -webkit-text-fill-color: transparent; /* Hace que el color del texto sea transparente */
+    font-size: 5vw; /* Cambiado a una unidad relativa para adaptarse mejor en móviles */
+    background-image: linear-gradient(to right, #1214aade, #1214aade, #1214aade, #7e0dc0, #7e0dc0, #7e0dc0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-.itemStack{
-    background-color: rgba(27, 27, 27, 0.514);
-    text-align: center;
-    padding: 1em;
-    border-radius: 20px;
-    border: 2px solid rgba(182, 177, 177, 0.671);
-}
-
-
-.imgStack {
-    height: 120px;
-    border-radius: 20px;
-}
-
-.pStack {
-    text-align: center;
-    padding-top: 1em;
-}
-
-.blockStack {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
 
 .itemStack {
     position: relative;
@@ -57,7 +33,42 @@
     background: transparent; /* Fondo transparente cuando no hay hover */
 }
 
-.itemStack:hover {
-    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(116, 114, 114, 0.692), transparent 60%);
+.imgStack {
+    height: 80px; /* Ajustado para móviles */
+    border-radius: 20px;
 }
 
+.pStack {
+    text-align: center;
+    padding-top: 0.5em; /* Ajustado para móviles */
+}
+
+.blockStack {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Columnas adaptativas */
+    gap: 10px; /* Espacio reducido entre elementos */
+}
+
+/* Media Queries para mejorar el diseño en móviles */
+@media (max-width: 768px) {
+    #case-info-stack {
+        margin-top: 0em; /* Espacio superior ajustado */
+    }
+
+    #titleStack {
+        font-size: 6em; /* Ajuste de tamaño de fuente para móviles */
+    }
+
+    .imgStack {
+        height: 60px; /* Ajuste del tamaño de la imagen para móviles */
+    }
+
+    .pStack {
+        padding-top: 0.3em; /* Ajuste de padding para móviles */
+    }
+
+    .blockStack {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
+        gap: 5px; /* Espacio entre elementos reducido */
+    }
+}

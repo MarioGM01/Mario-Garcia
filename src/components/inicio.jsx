@@ -19,7 +19,7 @@ export function Inicio() {
                             <h3 id='h3-web'>Web developer</h3>
                             <div>
                                 <a href={cvFile} download="MarioGarcia_CV.pdf" id="cv-button">
-                                    <img src={iconDownload} alt="icono de descarga" className="icono-boton" />
+                                    <img src={iconDownload} alt="icono de descarga" className="icono-boton" id='photoMe' />
                                     <span>Descargar CV</span>
                                 </a>
                             </div>
