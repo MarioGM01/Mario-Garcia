@@ -3,7 +3,7 @@ import React from 'react';
 import './inicio.css'
 import logo from '../imgs/foto-perfil.png'
 import iconDownload from '../imgs/download.png'
-import cvFile from '../documents/CvMario.pdf'
+import CVFile from '../documents/CvMario.pdf'
 import linkeIcon from '../imgs/iconLinckeding.svg'
 import gmIcon from '../imgs/iconsGmail.svg'
 import gitIcon from '../imgs/iconsGitHub.svg'
@@ -18,7 +18,7 @@ export function Inicio() {
                             <h1 id='h1-name-inicio'>Mario Garcia Martinez</h1>
                             <h3 id='h3-web'>Web developer</h3>
                             <div>
-                                <a href={cvFile} download="MarioGarcia_CV.pdf" id="cv-button">
+                                <a href={CVFile} download="MarioGarcia.pdf" id="cv-button">
                                     <img src={iconDownload} alt="icono de descarga" className="icono-boton" id='photoMe' />
                                     <span>Descargar CV</span>
                                 </a>
