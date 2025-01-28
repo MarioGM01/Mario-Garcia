@@ -1,0 +1,85 @@
+.timeline {
+  position: relative;
+  padding: 20px 0; 
+  background-color: #07060644; /* Fondo semitransparente */
+  border-radius: 30px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Define un ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+}
+
+
+#caseExperience {
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: center; /* Centra el contenido en el eje horizontal */
+  margin-top: 5em;
+  flex-direction: column; /* Cambia a columna en móviles */
+}
+
+.timeline-item {
+  align-items: center;
+  position: relative;
+  margin: 10px 0;
+  padding-left: 30px;
+  width: 90%; /* Ancho al 90% para móviles */
+  max-width: 54em; /* Ancho máximo para pantallas grandes */
+  transition: transform 1s ease;
+  transform: scale(1);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 0em;
+}
+
+.timeline-item:hover {
+  transform: scale(1.07);
+  border-color: #0a1441ea; /* Color del borde en hover */
+}
+
+/* Elimina los efectos hover en móviles */
+@media (max-width: 768px) {
+  .timeline-item:hover {
+    transform: scale(1); /* Desactivar efecto hover */
+    border-color: transparent; /* Elimina el borde */
+  }
+}
+
+.timeline-content {
+  border-left: 2px solid #3250d69d; /* Línea a la derecha */
+  padding-left: 15px; /* Espacio para el texto */
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#location {
+  margin-right: 0.5em;
+}
+
+h2, h3, h4, h5, p {
+  margin: 0.3em;
+}
+
+#titleExperience {
+  font-size: 2.6rem; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold; /* O usa un número como 700 para más grosor */
+  margin-bottom: 20px; /* Espaciado inferior opcional */
+  color: #ffffff; /* Color del texto, opcional */
+  margin-left: 1em;
+}
+
+/* Media Queries para un diseño responsive */
+@media (max-width: 768px) {
+  #caseExperience {
+    margin-top: 3em; /* Reduce el margen superior en móviles */
+  }
+
+  .timeline-item {
+    padding-left: 10px; /* Reduce el padding a la izquierda */
+    width: 100%; /* Ancho completo en móviles */
+  }
+
+  .timeline-content{
+    margin-right: 1em;
+  }
+}

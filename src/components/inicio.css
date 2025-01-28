@@ -1,0 +1,167 @@
+#case-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+.box-content {
+    display: flex;
+    align-items: center;
+    background-color: #00000073;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Mantiene un buen ancho en pantallas grandes */
+}
+
+.box-inf {
+    margin-right: auto;
+    color: white;
+}
+
+.box-img {
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#img-perfil {
+    width: 300px; /* Ajustar tamaño para pantallas grandes */
+    height: auto;
+    border-radius: 10%;
+}
+
+#h1-name-inicio {
+    position: relative;
+    color: white;
+    font-size: 3em;
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(180deg, #000000, #003366, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.8;
+}
+
+#h3-web {
+    position: relative;
+    color: rgb(187, 187, 187);
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 15px;
+    background: linear-gradient(180deg, #000000, #003366, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.8;
+}
+
+#cv-button {
+    height: 25px;
+    width: 150px; /* Mantiene un ancho adecuado en pantallas grandes */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: #1f2a38;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    text-decoration: none;
+}
+
+#cv-button:hover {
+    background: linear-gradient(35deg, #1f2a38, #7194b8);
+    transform: scale(1.05);
+}
+
+.icono-boton {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.linkedIn-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.linkedIn-icons .icon {
+    width: 100px; /* Tamaño de iconos en pantallas grandes */
+    height: auto;
+    margin: 0 5em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.linkedIn-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+.imgsIcons {
+    background-color: #a2bbd4a4;
+    border-radius: 10px;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.imgsIcons:hover {
+    transition: opacity 0.3s ease;
+    background-color: #0a66c2;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    #case-info {
+        display: flex;
+        justify-content: center;
+        margin-top: 0em;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    }
+    
+    .box-content {
+        display: flex;
+        align-items: center;
+        background-color: #00000000;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+        width: 90%; /* Aumenta el ancho en móviles */
+        max-width: 600px; /* Máximo ancho para pantallas grandes */
+        margin: 0 auto; /* Centra el contenido */
+    }
+    
+    #img-perfil {
+        width: 100%; /* Hace la imagen responsiva */
+        max-width: 300px; /* Máximo ancho de la imagen */
+        height: auto;
+        border-radius: 10%;
+    }
+    
+    /* Otros estilos como antes */
+    
+
+    #h1-name-inicio {
+        font-size: 2.5em; /* Ajusta el tamaño de fuente en móviles */
+        text-align: center; /* Centra el texto */
+    }
+
+    #h3-web {
+        font-size: 1.2em; /* Ajusta el tamaño de fuente en móviles */
+        text-align: center; /* Centra el texto */
+    }
+
+    #cv-button {
+        width: 100%; /* Botón ocupa el ancho completo en móviles */
+        padding: 10px; /* Aumentar el padding */
+        margin-top: 1em; /* Espacio encima del botón */
+    }
+
+    .linkedIn-icons .icon {
+        width: 80px; /* Tamaño de iconos en móviles */
+        margin: 1em; /* Espacio entre iconos en móviles */
+    }
+}
