@@ -1,9 +1,11 @@
+
+
 /* Estrellas fugaces animadas */
 .star-container {
+    top: -650px; /* Esto desplaza el inicio 50 píxeles hacia arriba */
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden; /* Para que las estrellas no se vean fuera de la pantalla */
+    height: 100%;
     z-index: -10;
 }
 
@@ -14,15 +16,14 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     opacity: 0.7;
     animation: fall linear infinite;
+    /* Desplazar las estrellas 50px hacia arriba para que empiecen más alto */
 }
 
 @keyframes fall {
     0% {
-        transform: translateY(-10vh) translateX(0) rotate(0deg);
-        opacity: 1;
+        transform: translateY(0) translateX(0) rotate(0deg);
     }
     100% {
-        transform: translateY(100vh) translateX(100vw) rotate(360deg);
-        opacity: 0;
+        transform: translateY(calc(100vh + 50px)) translateX(100vw) rotate(360deg);
     }
 }
