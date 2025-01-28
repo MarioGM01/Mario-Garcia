@@ -1,7 +1,7 @@
 #case-info {
     display: flex;
     justify-content: center;
-    margin-top: 10em;
+    padding-top: 10em;
 }
 
 .box-content {
