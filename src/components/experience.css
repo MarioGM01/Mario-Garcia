@@ -62,11 +62,11 @@ h2, h3, h4, h5, p {
 }
 
 #titleExperience {
-  font-size: 2.6rem; /* Ajusta el tamaño según sea necesario */
-  font-weight: bold; /* O usa un número como 700 para más grosor */
-  margin-bottom: 20px; /* Espaciado inferior opcional */
-  color: #ffffff; /* Color del texto, opcional */
-  margin-left: 1em;
+  text-align: center;
+  font-size: 5vw; /* Cambiado a una unidad relativa para adaptarse mejor en móviles */
+  background-image: linear-gradient(to right, #1214aade, #1214aade, #1214aade, #7e0dc0, #7e0dc0, #7e0dc0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Media Queries para un diseño responsive */
