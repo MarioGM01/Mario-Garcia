@@ -1,0 +1,143 @@
+#caseExperience {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.timeline {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#titleExperience {
+    font-size: 5em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Caja de los 3 bloques */
+.Box-Apps {
+    display: flex;
+    /* Usa flexbox para organizar los bloques horizontalmente */
+    justify-content: space-between;
+    /* Espacio entre los bloques */
+    align-items: center;
+    /* Alinea los elementos verticalmente al centro */
+    gap: 20px;
+    /* Espacio entre bloques */
+    flex-wrap: wrap;
+    /* Permite que los bloques se acomoden en varias líneas en pantallas pequeñas */
+}
+
+/* Cada bloque individual */
+.AppBlock {
+    width: 30%;
+    /* Cada bloque ocupa el 30% del ancho en pantallas grandes */
+    text-align: center;
+    min-width: 250px;
+    /* Asegura que los bloques no sean más pequeños de 250px */
+}
+
+/* Imagen del logo */
+.Img {
+    width: 150px;
+    height: auto;
+    border-radius: 1em;
+    border: 2px solid #8a8585a9;
+}
+
+.bloque2{
+    margin-left: -30px;
+}
+
+/* Estilo de los botones */
+.download-btn {
+    margin-top: 15px;
+    width: 150px;
+    /* Mantiene un ancho adecuado en pantallas grandes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: #1f2a38;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    text-decoration: none;
+}
+
+/* Estilo cuando el botón de iPhone está deshabilitado */
+.download-btn:disabled {
+    background: #1f2a38;
+    cursor: not-allowed;
+}
+
+/* Efecto hover en los botones (no deshabilitados) */
+.download-btn:hover:not(:disabled) {
+    background-color: #7e0dc0;
+    transform: scale(1.05);
+    /* Efecto de expansión */
+}
+
+
+a.disabled {
+    pointer-events: none;  /* Desactiva cualquier interacción con el enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit;        /* Mantiene el color original del texto */
+}
+
+a.disabled:hover {
+    background: transparent; /* Evita cualquier cambio en el fondo al hacer hover */
+    color: inherit;           /* Mantiene el color igual */
+}
+
+
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+
+    .Box-Apps {
+        flex-direction: column;
+        /* En pantallas pequeñas, cambia los bloques a disposición vertical */
+        align-items: center;
+        /* Centra los bloques en pantallas pequeñas */
+        margin-right: 20px;
+    }
+
+    .Img {
+        width: 120px;
+        /* Ajustar el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        width: 100%;
+        /* Hace los botones más anchos en pantallas pequeñas */
+    }
+
+    /* Ajuste de los bloques */
+    .AppBlock {
+        width: 100%;
+        /* Los bloques ocupan todo el ancho en pantallas pequeñas */
+        text-align: center;
+    }
+
+    
+    .bloque2{
+        margin-left: 0px;
+    }
+
+    #titleExperience {
+        font-size: 4em;
+        /* Ajuste de tamaño de fuente para móviles */
+    }
+}

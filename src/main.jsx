@@ -6,6 +6,7 @@ import { Inicio } from './components/inicio';
 import { Experience } from "./components/experience.jsx";
 import { Stack } from './components/stack.jsx';
 import { Footer } from './components/footer.jsx';
+import {Apps } from './components/Apps.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <Inicio />
       <Experience />
       <Stack />
+      <Apps />
       <Footer />
     </>
   </StrictMode>,

@@ -1,86 +1,81 @@
+/* Contenedor principal de experiencia */
+#caseExperience {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  flex-direction: column; /* Cambia a columna en pantallas móviles */
+  word-wrap: break-word; /* Asegura que el texto largo se ajuste */
+  padding: 0 20px;
+}
+
+/* Estilo general de la línea de tiempo */
 .timeline {
-  position: relative;
-  padding: 20px 0; 
-  background-color: #07060644; /* Fondo semitransparente */
+  max-width: 800px; /* Define un ancho máximo */
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+  padding: 20px;
   border-radius: 30px; /* Bordes redondeados */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px; /* Define un ancho máximo */
   margin: 0 auto; /* Centra horizontalmente */
-  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+  word-wrap: break-word; /* Asegura que el texto largo se ajuste */
 }
 
-
-#caseExperience {
-  display: flex; /* Utiliza flexbox para el diseño */
-  justify-content: center; /* Centra el contenido en el eje horizontal */
-  margin-top: 5em;
-  flex-direction: column; /* Cambia a columna en móviles */
-}
-
+/* Cada ítem de la línea de tiempo */
 .timeline-item {
-  align-items: center;
-  position: relative;
-  margin: 10px 0;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro de cada item se apilen */
+  margin: 20px 0;
   padding-left: 30px;
-  width: 90%; /* Ancho al 90% para móviles */
-  max-width: 54em; /* Ancho máximo para pantallas grandes */
+  width: 100%; /* Asegura que el ancho sea siempre el 100% */
   transition: transform 1s ease;
   transform: scale(1);
   border: 2px solid transparent;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding-bottom: 0em;
+  word-wrap: break-word; /* Evita que el texto se corte */
 }
 
-.timeline-item:hover {
-  transform: scale(1.07);
-  border-color: #0a1441ea; /* Color del borde en hover */
-}
-
-/* Elimina los efectos hover en móviles */
-@media (max-width: 768px) {
-  .timeline-item:hover {
-    transform: scale(1); /* Desactivar efecto hover */
-    border-color: transparent; /* Elimina el borde */
-  }
-}
-
+/* Estilo del contenido de cada item */
 .timeline-content {
-  border-left: 2px solid #3250d69d; /* Línea a la derecha */
   padding-left: 15px; /* Espacio para el texto */
   margin-left: 10px;
   margin-bottom: 20px;
   color: #ffffff;
+  word-wrap: break-word; /* Asegura que el texto largo se ajuste */
 }
 
-#location {
-  margin-right: 0.5em;
-}
-
-h2, h3, h4, h5, p {
+/* Estilo del título de cada experiencia */
+h2, h3, h4, p {
   margin: 0.3em;
+  word-wrap: break-word; /* Evita que el texto se corte */
 }
 
+/* Título de la experiencia */
 #titleExperience {
   text-align: center;
-  font-size: 5vw; /* Cambiado a una unidad relativa para adaptarse mejor en móviles */
-  background-image: linear-gradient(to right, #1214aade, #1214aade, #1214aade, #7e0dc0, #7e0dc0, #7e0dc0);
+  font-size: 5em;
+    background-image: linear-gradient(to right, #1214aade, #1214aade, #1214aade, #7e0dc0, #7e0dc0, #7e0dc0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  word-wrap: break-word; /* Evita que el título se corte */
 }
 
-/* Media Queries para un diseño responsive */
+/* Media Queries para diseño responsive */
 @media (max-width: 768px) {
   #caseExperience {
     margin-top: 3em; /* Reduce el margen superior en móviles */
+    margin-left: -20px;
   }
 
   .timeline-item {
-    padding-left: 10px; /* Reduce el padding a la izquierda */
+    padding-left: 0px; /* Reduce el padding a la izquierda */
+    margin-left: -10px;
     width: 100%; /* Ancho completo en móviles */
   }
 
-  .timeline-content{
-    margin-right: 1em;
+
+  #titleExperience {
+    font-size: 3.5rem; /* Ajustar el tamaño del título en pantallas pequeñas */
+    word-wrap: break-word; /* Evita que el texto del título se corte */
   }
 }
