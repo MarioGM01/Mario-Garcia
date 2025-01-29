@@ -16,7 +16,7 @@ export function Apps() {
 
                     {/* Bloque 2: Descripción */}
                     <div className="AppBlock">
-                        <p>Texto sencillo sobre la aplicación. Aquí puedes describir las funcionalidades principales o beneficios de la app.</p>
+                        <p>Aplicación sencilla para recién iniciados en el gimnasio, construida con React Native y Expo para una experiencia de usuario fluida y accesible.</p>
                     </div>
 
                     {/* Bloque 3: Botones de descarga */}
