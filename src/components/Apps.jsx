@@ -22,7 +22,7 @@ export function Apps() {
                     {/* Bloque 3: Botones de descarga */}
                     <div className="AppBlock">
                         <button className="download-btn">
-                            <a className='a-th' href="/APKGYM.apk" download="GYM.apk" id="cv-button">
+                            <a href="/APKGYM.apk" download="GYM.apk" id="cv-button">
                                 Descargar APK
                             </a>
                         </button>
