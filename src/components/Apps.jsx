@@ -23,7 +23,8 @@ export function Apps() {
                     <div className="AppBlock">
                         <a href="https://github.com/MarioGM01/Gym" target="_blank" rel="noopener noreferrer">
                             <div className="itemStack">
-                                <img className="imgStack" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt="GitHub" />
+                                {/* Ruta relativa correcta para la imagen de GitHub */}
+                                <img className="imgStack" src="../imgs/stack/iconsGitHub.svg" alt="GitHub" />
                                 <p className="pStack">Ver en GitHub</p>
                             </div>
                         </a>
