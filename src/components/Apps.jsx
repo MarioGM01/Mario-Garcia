@@ -21,14 +21,12 @@ export function Apps() {
 
                     {/* Bloque 3: Botones de descarga */}
                     <div className="AppBlock">
-                        <button className="download-btn">
-                            <a href="/APKGYM.apk" download="GYM.apk" id="cv-button">
-                                Descargar APK
-                            </a>
-                        </button>
-                        <button className="download-btn iphone-disabled" disabled>
-                            Descargar iPhone (mantenimiento)
-                        </button>
+                        <a href="https://github.com/MarioGM01/Gym" target="_blank" rel="noopener noreferrer">
+                            <div className="itemStack">
+                                <img className="imgStack" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt="GitHub" />
+                                <p className="pStack">Ver en GitHub</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
