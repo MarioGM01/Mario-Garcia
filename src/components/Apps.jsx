@@ -24,6 +24,7 @@ export function Apps() {
                     <div className="AppBlock">
                         <a href="https://github.com/MarioGM01" target="_blank" >
                             <img src={gitIcon} alt="GitHub" className="icon imgsIcons" />
+                            <p>Ver en GitHub</p>
                         </a>
                     </div>
                 </div>
