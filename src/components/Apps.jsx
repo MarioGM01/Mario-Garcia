@@ -1,7 +1,7 @@
 import React from 'react';
 import './Apps.css';
 import Logo from '../imgs/Logo-Apk-GYM.png'; // Importar la imagen correctamente
-import LogoGit from '../imgs/stack/iconsGitHub.svg'
+import gitIcon from '../imgs/iconsGitHub.svg'
 
 export function Apps() {
     return (
@@ -22,12 +22,8 @@ export function Apps() {
 
                     {/* Bloque 3: Botones de descarga */}
                     <div className="AppBlock">
-                        <a href="https://github.com/MarioGM01/Gym" target="_blank" rel="noopener noreferrer">
-                            <div className="itemStack">
-                                {/* Ruta relativa correcta para la imagen de GitHub */}
-                                <img className="imgStack" src={LogoGit} alt="GitHub" />
-                                <p className="pStack">Ver en GitHub</p>
-                            </div>
+                        <a href="https://github.com/MarioGM01" target="_blank" >
+                            <img src={gitIcon} alt="GitHub" className="icon imgsIcons" />
                         </a>
                     </div>
                 </div>

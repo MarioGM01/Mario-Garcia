@@ -99,45 +99,6 @@ a.disabled:hover {
     color: inherit;           /* Mantiene el color igual */
 }
 
-.itemStack {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 1em;
-    border-radius: 20px;
-    border: 2px solid rgba(73, 71, 71, 0.63);
-    transition: background 0.1s ease;
-    background: transparent;
-    cursor: pointer;
-    display: inline-block; /* Asegura que se muestre como un bloque de contenido */
-}
-
-.itemStack:hover {
-    background: #f3f3f3; /* Fondo al pasar el mouse */
-}
-
-.imgStack {
-    height: 50px; /* Tamaño ajustado para el ícono de GitHub */
-    border-radius: 20px;
-    margin-bottom: 0.5em; /* Separación entre la imagen y el texto */
-}
-
-.pStack {
-    text-align: center;
-    padding-top: 0.5em;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #333; /* Color de texto para el enlace */
-}
-
-.itemStack a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Mantiene el color original del texto */
-}
-
-.itemStack:hover .pStack {
-    color: #7e0dc0; /* Cambia el color del texto cuando se pasa el mouse */
-}
 
 
 /* Media queries para hacerlo responsive */
